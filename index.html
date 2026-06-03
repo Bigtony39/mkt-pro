@@ -211,7 +211,7 @@ section { padding: 80px 20px; }
   transition: border-color 0.2s, transform 0.2s;
   position: relative; overflow: hidden;
 }
-.tool-card:hover { border-color: #444; transform: translateY(-2px); }
+.tool-card:hover { border-color: #444; transform: translateY(-2px); cursor: pointer; }
 .tool-badge {
   position: absolute; top: 14px; right: 14px;
   font-size: 0.48rem; font-weight: 700;
@@ -429,56 +429,56 @@ footer {
       <a class="btn-primary" href="marketer-pro-v3.html">Открыть все →</a>
     </div>
     <div class="tools-grid">
-      <div class="tool-card">
+      <div class="tool-card" onclick="location.href='marketer-pro-v3.html#romi'">
         <span class="tool-badge tb-f">Free</span>
         <div class="tool-icon">📈</div>
         <div class="tool-name">ROMI</div>
         <div class="tool-desc">Возврат маркетинговых инвестиций. Показывает прибыльна ли кампания с учётом маржи.</div>
         <div class="tool-formula">(Доход × Маржа − Расходы) / Расходы</div>
       </div>
-      <div class="tool-card">
+      <div class="tool-card" onclick="location.href='marketer-pro-v3.html#cac'">
         <span class="tool-badge tb-f">Free</span>
         <div class="tool-icon">👤</div>
         <div class="tool-name">CAC</div>
         <div class="tool-desc">Стоимость привлечения одного клиента. Базовая метрика для оценки эффективности.</div>
         <div class="tool-formula">Расходы / Количество клиентов</div>
       </div>
-      <div class="tool-card">
+      <div class="tool-card" onclick="location.href='marketer-pro-v3.html#ch'">
         <span class="tool-badge tb-f">Free</span>
         <div class="tool-icon">📊</div>
         <div class="tool-name">Сравнение каналов</div>
         <div class="tool-desc">CPA и ROAS по Яндексу, VK и Telegram. Сразу видно какой канал работает лучше.</div>
         <div class="tool-formula">CPA = Расходы / Заявки · ROAS = Выручка / Расходы</div>
       </div>
-      <div class="tool-card">
+      <div class="tool-card" onclick="location.href='marketer-pro-v3.html#funnel'">
         <span class="tool-badge tb-p">Pro</span>
         <div class="tool-icon">🔽</div>
         <div class="tool-name">CTR и воронка</div>
         <div class="tool-desc">Конверсия на каждом этапе: показы → клики → заявки → продажи.</div>
         <div class="tool-formula">CTR = Клики / Показы × 100</div>
       </div>
-      <div class="tool-card">
+      <div class="tool-card" onclick="location.href='marketer-pro-v3.html#cpl'">
         <span class="tool-badge tb-p">Pro</span>
         <div class="tool-icon">🎯</div>
         <div class="tool-name">CPL</div>
         <div class="tool-desc">Стоимость лида. Отличается от CAC — лид это заявка, а не готовый клиент.</div>
         <div class="tool-formula">Расходы / Количество лидов</div>
       </div>
-      <div class="tool-card">
+      <div class="tool-card" onclick="location.href='marketer-pro-v3.html#budget'">
         <span class="tool-badge tb-p">Pro</span>
         <div class="tool-icon">🗂</div>
         <div class="tool-name">Бюджет на цель</div>
         <div class="tool-desc">Обратный расчёт: сколько потратить чтобы получить нужное число клиентов.</div>
         <div class="tool-formula">Бюджет = Цель × CAC</div>
       </div>
-      <div class="tool-card">
+      <div class="tool-card" onclick="location.href='marketer-pro-v3.html#be'">
         <span class="tool-badge tb-p">Pro</span>
         <div class="tool-icon">⚖️</div>
         <div class="tool-name">Точка безубыточности</div>
         <div class="tool-desc">Сколько продаж нужно чтобы реклама окупилась. Важно до запуска кампании.</div>
         <div class="tool-formula">Расходы / (Цена − Себестоимость)</div>
       </div>
-      <div class="tool-card">
+      <div class="tool-card" onclick="location.href='marketer-pro-v3.html#ltv'">
         <span class="tool-badge tb-p">Pro</span>
         <div class="tool-icon">♾️</div>
         <div class="tool-name">LTV и LTV/CAC</div>

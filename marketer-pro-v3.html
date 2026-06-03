@@ -307,7 +307,7 @@ footer {
 <body>
 
 <nav>
-  <a class="logo" href="#">MKT·PRO</a>
+  <a class="logo" href="index.html">MKT·PRO</a>
   <div class="nav-pills">
     <a class="np free" href="#romi">ROMI</a>
     <a class="np free" href="#cac">CAC</a>
@@ -555,6 +555,18 @@ footer {
     </div>
   </div>
 
+  <div style="text-align:center; margin-top: 28px; padding-top: 28px; border-top: 1px solid var(--border);">
+    <a href="index.html" style="
+      font-family: 'Unbounded', sans-serif;
+      font-size: 0.6rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 12px 24px; border-radius: 5px;
+      background: transparent; color: var(--text);
+      border: 1px solid var(--border);
+      text-decoration: none; transition: border-color 0.15s;
+      display: inline-block;
+    " onmouseover="this.style.borderColor='#555'" onmouseout="this.style.borderColor='var(--border)'">← Вернуться на главную</a>
+  </div>
 </main>
 
 <footer>Все расчёты локальны — данные никуда не передаются · MKT·PRO 2025</footer>
@@ -744,6 +756,22 @@ function doLTV() {
 
 // ── INIT ─────────────────────────────────────────────────────────────────
 load();
+
+// Open card from URL hash
+function openFromHash() {
+  var hash = window.location.hash;
+  if (!hash) return;
+  var target = document.querySelector(hash);
+  if (!target) return;
+  // Open the card
+  target.classList.add('open');
+  // Scroll to it
+  setTimeout(function() {
+    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, 100);
+}
+openFromHash();
+window.addEventListener('hashchange', openFromHash);
 </script>
 </body>
 </html>
